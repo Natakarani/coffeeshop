@@ -1,0 +1,496 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+.paddingLeft {
+  padding-left: 190px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1029;
+  background-color: rgb(127, 46, 2);
+  padding: 10px;
+  color: white;
+  padding-left: 40px;
+  padding-right: 40px;
+  /* display: flex;
+  align-items: center !important;
+  justify-content: space-between; */
+}
+.header-icon {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  display: flex;
+  gap: 20px;
+  align-items: center !important;
+}
+header .fa-bars {
+  display: flex;
+}
+#nav {
+  display: flex;
+  gap: 50px;
+}
+header ul li {
+  font-size: 18px;
+  font-weight: 600;
+  list-style-type: none;
+}
+header img {
+  width: 47px;
+  height: 47px;
+  border-radius: 50%;
+}
+.dark-btn:hover {
+  background-color: transparent !important;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+header h2 {
+  background: -webkit-linear-gradient(45deg, white, #c95304, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.header-btns .btn {
+  padding: 7px 20px !important;
+}
+
+.intro img {
+  border-radius: 70%;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+.intro {
+  background: conic-gradient(
+    rgba(255, 77, 0, 0.749) 10%,
+    rgba(128, 128, 128, 0.16)
+  );
+  padding: 10px 40px;
+  display: grid;
+  /* gap:60px; */
+  align-items: center;
+  justify-content: space-around;
+  grid-template-columns: 1fr 1fr;
+}
+.intro h3 {
+  margin-bottom: 17px;
+  font-size: 36px;
+  color: rgb(127, 46, 2);
+}
+.intro p {
+  font-size: 17px;
+}
+.brown-btn:hover {
+  background-color: transparent !important;
+  border: 1px solid rgb(127, 46, 2);
+  border-radius: 10px;
+}
+.brown-btn {
+  padding: 7px 20px !important;
+  background-color: rgb(127, 46, 2);
+  border-radius: 10px;
+  color: white;
+}
+/*menu*/
+.menu {
+  padding: 10px 40px;
+  display: grid;
+  gap: 60px;
+  grid-template-columns: 1fr 1fr;
+}
+.menu1 h4 {
+  color: brown;
+}
+.menu img {
+  max-width: 100%;
+  transition: 0.8s;
+  border-bottom-right-radius: 30px;
+  border-top-left-radius: 30px;
+  height: 100%;
+  border: 1px solid brown;
+}
+.menu img:hover {
+  transform: scale(1.1);
+}
+.menu1 {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.price {
+  display: flex;
+  gap: 20px;
+}
+.menuHeading {
+  padding: 10px 40px;
+  color: brown;
+  font-weight: 600;
+  font-size: 35px;
+  position: relative;
+}
+.menuHeading::before {
+  position: absolute;
+  content: "";
+  top: 60px;
+  left: 43px;
+  width: 185px;
+  height: 2px;
+  background-color: brown;
+}
+/*about*/
+
+.carousel-item img {
+  width: 100%;
+  height: 100vh;
+}
+.about-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 40px;
+  background: url(https://img.freepik.com/premium-photo/international-coffee-day_148840-8034.jpg?w=996)
+    no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  animation: images 7s linear infinite alternate-reverse;
+}
+.about-data p {
+  font-size: 18px;
+  line-height: 2;
+}
+.about-data h1 {
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 3px rgba(20, 19, 19, 0.811);
+}
+.about-data button {
+  border: 1px solid rgb(120, 118, 118);
+  padding: 10px 90px !important;
+}
+.about-data button:hover {
+  border: 1px solid white;
+}
+@keyframes images {
+  25% {
+    background: url(https://img.freepik.com/premium-photo/photo-cup-latte_787705-3175.jpg?w=996)
+      no-repeat center;
+    background-size: cover;
+  }
+  50% {
+    background: url(https://img.freepik.com/premium-photo/international-coffee-day_148840-8034.jpg?w=996)
+      no-repeat center;
+
+    background-size: cover;
+  }
+  75% {
+    background: url(https://img.freepik.com/premium-photo/international-coffee-day_148840-8034.jpg?w=996)
+      no-repeat center;
+
+    background-size: cover;
+  }
+  100% {
+    background: url(https://img.freepik.com/premium-photo/3d-rendered-photo-coffee-cup-egg_804007-22645.jpg?w=1060)
+      no-repeat center;
+    background-size: cover;
+  }
+}
+.menuHeading1 {
+  padding: 10px 40px;
+  color: brown;
+  font-weight: 600;
+  font-size: 35px;
+  position: relative;
+}
+.menuHeading1::before {
+  position: absolute;
+  content: "";
+  top: 60px;
+  left: 43px;
+  width: 140px;
+  height: 2px;
+  background-color: brown;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  padding: 40px 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-content: center;
+}
+.footer img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+@media (max-width: 992px) {
+  header {
+    position: relative;
+  }
+
+  #nav {
+    background-color: rgba(127, 46, 2, 0.959);
+    width: 100%;
+    padding: 10px 495px;
+    position: absolute;
+    left: -630px;
+    bottom: -296px;
+    display: flex;
+    gap: 30px;
+    color: white;
+    flex-direction: column;
+  }
+  .header-btns {
+    position: absolute;
+    top: 340px;
+    display: flex;
+    justify-content: center;
+  }
+  #nav li:hover {
+    transition: 0.7s;
+    text-decoration: underline;
+  }
+  .paddingLeft {
+    margin-left: 0px;
+  }
+  header h2 {
+    font-size: 38px;
+  }
+  .links {
+    position: relative;
+  }
+  /* .links ul {
+    background-color: brown;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    display: block !important;
+    gap: 30px;
+  } */
+  /* .links ul li {
+    background-color: red;
+  } */
+  .header-btns {
+    display: none;
+  }
+  .intro img {
+    height: 70vh;
+  }
+  .menuHeading::before {
+    width: 170px;
+  }
+  .menuHeading1::before {
+    width: 130px;
+  }
+  .menuHeading,
+  .menuHeading1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 32px;
+  }
+  .about-data p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .menuHeading,
+  .menuHeading1 {
+    font-size: 28px;
+  }
+  .menuHeading::before,
+  .menuHeading1::before {
+    top: 50px;
+  }
+  .menuHeading::before {
+    width: 150px;
+  }
+  .menuHeading1::before {
+    width: 113px;
+  }
+  /* header {
+    display: flex;
+    align-items: start !important;
+  } */
+  .intro img {
+    height: 90vh;
+  }
+  .menu {
+    gap: 0;
+  }
+  header h2 {
+    font-size: 32px;
+  }
+  /* .header-btns .btn {
+    padding: 5px 26px !important;
+  } */
+  /* header {
+    display: flex;
+    align-items: start !important;
+  } */
+
+  /* header .fa-bars {
+    margin-top: 10px;
+    margin-left: -50px;
+    display: block;
+  } */
+  /* .links {
+    transform: translateY(70px);
+    flex-direction: column;
+    gap: 3px;
+  }
+  .links ul {
+    transform: translateX(-190px);
+    flex-direction: column;
+  } */
+  /* .header-btns button {
+    text-align: center;
+    min-width: 100%;
+    display: flex;
+    margin-left: 10px;
+    flex-direction: column !important;
+    gap: 3px;
+    transform: translateX(-340px);
+  }
+
+  header ul {
+    display: none;
+  } */
+  .intro img {
+    height: 90vh;
+  }
+  .menu {
+    gap: 0;
+  }
+  .intro h3 {
+    font-size: 29px;
+  }
+  .intro {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .menu {
+    grid-template-columns: 1fr;
+  }
+  .about-data {
+    height: 95vh;
+  }
+  .about-data p {
+    margin-top: -20px;
+  }
+  .footer {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+}
+@media (max-width: 576px) {
+  .intro h3 {
+    font-size: 30px;
+  }
+  .intro img {
+    height: 70vh;
+  }
+  .about-data {
+    height: 90vh;
+  }
+  .about-data p {
+    font-size: 14px;
+  }
+  .about-data button {
+    padding: 7px 18px !important;
+  }
+  .menuHeading,
+  .menuHeading1 {
+    font-size: 29px;
+  }
+  .menuHeading::before,
+  .menuHeading1::before {
+    top: 48px;
+    width: 155px;
+  }
+  .menuHeading1::before {
+    width: 110px;
+  }
+  footer p {
+    font-size: 12px;
+  }
+  footer h5 {
+    font-size: 15px;
+  }
+}
+@media (max-width: 360px) {
+  header {
+    gap: 0;
+  }
+  header h2 {
+    font-size: 30px;
+  }
+  .links {
+    margin-top: 20px;
+    gap: 2px;
+    margin-left: -110px;
+  }
+  header ul {
+    font-size: 10px;
+    gap: 7px;
+  }
+  .header-btns .dark-btn {
+    margin-bottom: 10px;
+  }
+  .header-btns {
+    margin-top: -20px;
+    flex-direction: column;
+  }
+  .header-btns button {
+    min-width: 170px;
+  }
+  header,
+  .intro,
+  .about-data,
+  .menu {
+    padding: 10px;
+  }
+  .intro img {
+    width: 100%;
+    height: 50vh;
+  }
+  .menu1 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .about-data {
+    height: 100vh;
+    padding: 330px 10px;
+  }
+  .menuHeading,
+  .menuHeading1 {
+    padding-left: 10px;
+    font-size: 29px;
+  }
+  .menuHeading1::before,
+  .menuHeading::before {
+    left: 10px;
+  }
+  .footer {
+    gap: 10px;
+    grid-template-columns: 1fr !important;
+  }
+}
